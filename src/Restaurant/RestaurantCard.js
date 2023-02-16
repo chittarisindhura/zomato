@@ -1,5 +1,3 @@
-import Restaurant from "./RestaurantPage";
-
 const RestaurantCard = ({
   id,
   path,
@@ -15,7 +13,7 @@ const RestaurantCard = ({
       <div className="card">
         <div className="restaurantDetails">
           <div>
-            <img src={path} height="150px" width="150px" alt="image" />
+            <img src={path} height="150px" width="150px" alt="card" />
           </div>
           <div className="address">
             <h2>{name}</h2>

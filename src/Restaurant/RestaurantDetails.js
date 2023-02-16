@@ -1,5 +1,4 @@
 import { useLocation } from "react-router-dom";
-import react, { useState, useEffect } from "react";
 
 import RestaurantPage from "./RestaurantPage";
 
@@ -12,6 +11,7 @@ const RestaurantDetails = ({ id }) => {
     if (obj.listid === restaurantId) {
       return obj;
     }
+    return;
   });
 
   return (

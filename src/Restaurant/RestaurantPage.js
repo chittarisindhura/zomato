@@ -1,5 +1,5 @@
 import Header from "../views/Header";
-import react, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 // import food from '
 import axios from "axios";
 const RestaurantPage = ({
@@ -15,7 +15,6 @@ const RestaurantPage = ({
 }) => {
   const [foodItems, setfoodItems] = useState("");
   const [costs, setCosts] = useState([]);
-  const [sum, setSum] = useState(0);
 
   useEffect(() => {
     getItems();
@@ -28,7 +27,6 @@ const RestaurantPage = ({
   };
   const handleAdd = (food) => {
     let add = food.cost;
-    let sum = 0;
     setCosts([...costs, add]);
   };
   const total = costs.reduce((prev, next) => {

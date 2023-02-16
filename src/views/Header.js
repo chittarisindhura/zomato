@@ -1,5 +1,5 @@
 import Image from "./EImage.js";
-import react, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 const Header = ({ HeaderColor }) => {
@@ -36,7 +36,7 @@ const Header = ({ HeaderColor }) => {
       const users = res.data;
       localStorage.setItem("user", JSON.stringify(users));
       localStorage.setItem("auth", true);
-      // return navigate("/");
+      return navigate("/");
     }
   };
   const handleSubmits = async (e) => {
@@ -61,7 +61,7 @@ const Header = ({ HeaderColor }) => {
         window.$("#exampleModal1").modal("hide");
       });
     }, 3000);
-  }, ["#submit"]);
+  }, []);
   const logout = async () => {
     const ApiUrl = "http://localhost:5000/logout";
     const res = await axios.post(ApiUrl);
@@ -165,7 +165,6 @@ const Header = ({ HeaderColor }) => {
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal1"
                   aria-hidden="true"
-                  href="#"
                 >
                   Sign up
                 </a>
@@ -252,7 +251,6 @@ const Header = ({ HeaderColor }) => {
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                   aria-hidden="true"
-                  href="#"
                 >
                   Login
                 </a>
