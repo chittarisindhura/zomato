@@ -8,10 +8,7 @@ const RestaurantDetails = ({ id }) => {
   const restaurantId = location.state.id;
 
   const info = data.filter((obj) => {
-    if (obj.listid === restaurantId) {
-      return obj;
-    }
-    return null;
+    return obj.listid === restaurantId;
   });
 
   return (

@@ -165,6 +165,7 @@ const Header = ({ HeaderColor }) => {
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal1"
                   aria-hidden="true"
+                  href="#exampleModal1"
                 >
                   Sign up
                 </a>
@@ -251,6 +252,7 @@ const Header = ({ HeaderColor }) => {
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                   aria-hidden="true"
+                  href="#exampleModal"
                 >
                   Login
                 </a>
