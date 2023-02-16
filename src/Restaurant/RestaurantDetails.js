@@ -11,7 +11,7 @@ const RestaurantDetails = ({ id }) => {
     if (obj.listid === restaurantId) {
       return obj;
     }
-    return;
+    return null;
   });
 
   return (
