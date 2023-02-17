@@ -118,7 +118,7 @@ input[type="search"] {
   gap: 50px;
   flex-wrap: wrap;
 }
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 1520px) {
   .restaurantType {
     display: flex;
     gap: 50px;
